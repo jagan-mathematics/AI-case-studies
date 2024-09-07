@@ -13,6 +13,7 @@ class ModelConfigs(metaclass=ABC):
     vocabulary_size: int
     use_represent_normalizer: bool
     layer_norm_eps: float = 1e-05
+    model_max_sequence: int = 2048
 
     def get_padding_token(self):
         """get model padding tokens"""
