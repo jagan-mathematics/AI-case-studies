@@ -17,7 +17,7 @@ prevalence of spelling errors in corpora make it difficult for word-level vocabu
 
 
 ## Reference:
-[1] [wordpeice tokenizer in Google production **NMT** model](https://arxiv.org/pdf/1609.08144v2)
-[2] [Neural Machine Translation of Rare Words with Subword Units](https://arxiv.org/pdf/1508.07909)
-[3] [rethinking tokenizers](https://arxiv.org/pdf/2403.00417)
-[4] [Andrej Karpathy video](https://www.youtube.com/watch?v=zduSFxRajkE)
+- [1] [wordpeice tokenizer in Google production **NMT** model](https://arxiv.org/pdf/1609.08144v2)
+- [2] [Neural Machine Translation of Rare Words with Subword Units](https://arxiv.org/pdf/1508.07909)
+- [3] [rethinking tokenizers](https://arxiv.org/pdf/2403.00417)
+- [4] [Andrej Karpathy video](https://www.youtube.com/watch?v=zduSFxRajkE)
