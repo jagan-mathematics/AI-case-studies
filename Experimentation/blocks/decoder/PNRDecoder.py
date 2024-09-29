@@ -11,8 +11,9 @@ class PNRDecoderBlock(nn.Module):
     Pre residual norm connection as in GPT and Gemma
     using RMS norm for stable training with scale invariant property
     """
-    def __init__(self, config: ModelConfigs):
+    def __init__(self, config: ModelConfigs, layer_idx):
         super().__init__()
+        self.layer_idx = layer_idx
         self.config = config
         self.hidden_size = config.d_model
 

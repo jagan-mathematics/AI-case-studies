@@ -7,6 +7,7 @@ from abc import ABC
 class ModelConfigs(metaclass=ABC):
     """abstract model configuration class"""
     model_name: str
+    num_layers: int
     padding_id: int
     d_model: int
     max_positions: int
