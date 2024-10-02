@@ -27,6 +27,19 @@ class PNRDecoderBlock(nn.Module):
                 position_ids,
                 output_attentions=False):
 
+        """
+        https://arxiv.org/pdf/2002.04745 (PRE-Norm)
+
+        x = embedding of each tokens (B x S x D)
+        a_x = self_attention autput (B x S x D)
+
+        Self-attention sub-block 1
+        x => norm(x) => n_x => att(n_x) => (a_x, a_score) => a_x + x => h_x
+
+        MLP sub-block: 2
+
+        h_x => norm(h_x) => n_hx => mlp(n_hx) => n_x => x_x + h_x => h_x
+        """
         # casual attention block
         residual_x = hidden_state
 
