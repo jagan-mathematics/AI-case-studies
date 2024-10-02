@@ -110,7 +110,7 @@ class RopeAttention(nn.Module):
         value_state = value_state.view(b_size, seq_len, self.num_heads, self.head_dim).transpose(1, 2)
 
         cos, sin = self.rotary_emb(value_state, position_ids)
-        query_state, value_state = apply_rotary_pos_emb(query_state, key_state, cos, sin)
+        query_state, key_state = apply_rotary_pos_emb(query_state, key_state, cos, sin)
 
         attn_weights = torch.matmul(query_state, key_state.transpose(2, 3)) * self.scaling
 
