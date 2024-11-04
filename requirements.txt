@@ -12,3 +12,5 @@ lm-eval
 scipy
 pynvml
 transformers
+matplotlib==3.9.2
+seaborn==0.13.2
