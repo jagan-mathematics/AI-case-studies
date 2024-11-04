@@ -1,9 +1,9 @@
 import torch
 from torch import nn
 
-from Experimentation.blocks.decoder.PNRDecoder import PNRDecoderBlock
-from Experimentation.blocks.layers.norms import RMSNorm
-from Experimentation.model_configs.base import ModelConfigs
+from blocks.decoder.PNRDecoder import PNRDecoderBlock
+from blocks.layers.norms import RMSNorm
+from model_configs.base import ModelConfigs
 
 
 def _prepare_4d_causal_attention_mask_with_cache_position(

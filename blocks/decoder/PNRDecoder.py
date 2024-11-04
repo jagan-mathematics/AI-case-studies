@@ -1,9 +1,9 @@
 from torch import nn
 
-from Experimentation.blocks.layers.point_wise_projection import PointWiseGateProjection
-from Experimentation.model_configs.base import ModelConfigs
-from Experimentation.blocks.layers.norms import RMSNorm
-from Experimentation.blocks.layers.multi_head_attention import RopeAttention
+from blocks.layers.point_wise_projection import PointWiseGateProjection
+from model_configs.base import ModelConfigs
+from blocks.layers.norms import RMSNorm
+from blocks.layers.multi_head_attention import RopeAttention
 
 
 class PNRDecoderBlock(nn.Module):

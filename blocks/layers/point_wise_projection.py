@@ -1,8 +1,8 @@
 import torch
 from torch import nn
 
-from Experimentation.blocks.activations.gelu import PytorchGELUTanh
-from Experimentation.model_configs.base import ModelConfigs
+from blocks.activations.gelu import PytorchGELUTanh
+from model_configs.base import ModelConfigs
 
 
 class PointWiseProjection(nn.Module):

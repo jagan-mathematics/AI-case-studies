@@ -3,9 +3,9 @@ import math
 import torch
 from torch import nn
 
-from Experimentation.blocks.layers.base_attention import BaseAttention
-from Experimentation.blocks.positional_encoding.rope import RotaryEmbedding, apply_rotary_pos_emb
-from Experimentation.model_configs.base import ModelConfigs
+from blocks.layers.base_attention import BaseAttention
+from blocks.positional_encoding.rope import RotaryEmbedding, apply_rotary_pos_emb
+from model_configs.base import ModelConfigs
 
 
 class MultiHeadAttention(BaseAttention):

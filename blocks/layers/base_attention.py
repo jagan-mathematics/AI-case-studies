@@ -1,5 +1,5 @@
 from torch import nn
-from Experimentation.model_configs.base import ModelConfigs
+from model_configs.base import ModelConfigs
 
 
 class BaseAttention(nn.Module):
