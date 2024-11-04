@@ -60,7 +60,7 @@ class RotaryEmbedding(nn.Module):
         x -> (b x h x s x d)
         positions_ids = (1 x s)
         """
-        seq_len = x.shape[0]
+        seq_len = x.shape[2]
         if self.dynamic_scale:
             self.re_initialize_angular_freq(seq_len)
 
